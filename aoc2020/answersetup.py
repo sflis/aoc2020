@@ -83,9 +83,7 @@ def create_folder(data):
     gen_file(
         path / "test_.py",
         "from aoc2020 import get_input\n"
-        "from aoc2020.d{day:02}_{title} import AnswerD{day:02}".format(
-            **data
-        )
+        "from aoc2020.d{day:02}_{title} import AnswerD{day:02}".format(**data)
         + test_tmpl.format(**data),
     )
     gen_file(path / "input.txt", data["input"])
