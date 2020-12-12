@@ -1,5 +1,7 @@
 from aoc2020 import get_input
 from aoc2020.d05_binary_boarding import AnswerD05
+
+
 def test_answers():
     example = AnswerD05(get_input(__file__, "example.txt"))
 

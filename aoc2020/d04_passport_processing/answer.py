@@ -34,7 +34,7 @@ class Passport:
             if rule[0] == "lim":
                 for s, lim in rule[1].items():
                     if s in v:
-                        i = (v.find(s) or len(v))
+                        i = v.find(s) or len(v)
                         digit = int(v[:i])
                         if digit >= lim[0] and digit <= lim[1]:
                             break

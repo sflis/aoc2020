@@ -12,4 +12,3 @@ class AnswerD05(Answer):
     @property
     def answer2(self):
         pass
-
